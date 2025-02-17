@@ -1,0 +1,207 @@
+/*
+Algumas informações úteis e dicas:
+  - Fontes disponíveis:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+  - Cores:
+    Tons de amarelo:
+      #e4fc2b
+      #e0d426
+      #f7d736
+      #e0af26
+      #fcb02b
+    Tons de cinza:
+      #2c2c2c
+      #4c4c4c
+    Cores dos cards:
+      #ead3a7
+      #9de0f5
+      #ef89ba
+      #fae890
+      #abe9c1
+  - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
+ */
+
+/* Você pode usar o CSS comentado abaixo, se ajudar */
+/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
+
+/*
+Algumas informações úteis e dicas:
+  - Fontes disponíveis:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+  - Cores:
+    Tons de amarelo:
+      #e4fc2b
+      #e0d426
+      #f7d736
+      #e0af26
+      #fcb02b
+    Tons de cinza:
+      #2c2c2c
+      #4c4c4c
+    Cores dos cards:
+      #ead3a7
+      #9de0f5
+      #ef89ba
+      #fae890
+      #abe9c1
+  - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
+ */
+
+ html,
+
+ body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #f8f8f8;
+ }
+
+ .btn {
+  position: relative;
+  display: block;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #f7d736;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  padding-top: 0;
+  border-radius: 50%;
+  background-color: rgba(236, 240, 241, 0.3);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+
+.appbar {
+  background-color: #f7d736;
+  padding: 25px;
+  display: flex;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 6px 8px rgba(0, 0, 0, 0.18);
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: 150px;
+}
+
+.container {
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.subtitle {
+  font-size: 2.5rem;
+  margin-left: 30px;
+}
+
+
+
+.form-card-title {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 85px;
+  border: none;
+
+  font-size: 2rem;
+}
+.form-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  height: 250px;
+
+  margin: 40px 0 70px;
+  width: 45%;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
+}
+.autoresize {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 1.3rem;
+}
+
+.card-title {
+  display: flex;
+  align-content: start;
+  font-size: 1.9rem;
+
+  margin-bottom: 30px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  align-content: flex-end;
+  font-size: 1.7rem;
+  color: #4c4c4c;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  height: 200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 8px 12px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  width: 400px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-color-1 { background-color: #9de0f5; }
+.card-color-2 { background-color: #ead3a7; }
+.card-color-3 { background-color: #fae890; }
+.card-color-4 { background-color: #abe9c1; }
+.card-color-5 { background-color: #ef89ba; }
+
+.card-rotation-1 { transform: rotate(1deg); }
+.card-rotation-2 { transform: rotate(2deg); }
+.card-rotation-3 { transform: rotate(3deg); }
+.card-rotation-4 { transform: rotate(4deg); }
+
+.card-rotation-5 { transform: rotate(5deg); }
+.card-rotation-6 { transform: rotate(6deg); }
+.card-rotation-7 { transform: rotate(7deg); }
+.card-rotation-8 { transform: rotate(8deg); }
+.card-rotation-9 { transform: rotate(9deg); }
+
+.card-rotation-10 { transform: rotate(10deg); }
+.card-rotation-11 { transform: rotate(11deg); }
